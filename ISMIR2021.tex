@@ -40,8 +40,10 @@ titlepage,						% Titelei auf eigener Seite
 \usepackage{paralist} 
 \usepackage{microtype} 
 \usepackage{graphicx} 
+\usepackage[margin = 2.5cm]{geometry}
 \usepackage{hyperref}
 
+\setlength{\parindent}{0pt}
 
 \begin{document}
 
@@ -56,47 +58,49 @@ titlepage,						% Titelei auf eigener Seite
 %\publishers{Herausgeber}
 \maketitle 	
 \tableofcontents		
+\clearpage
 
-\section{Introduction and Personnel}
+\section{Introduction}
     The 2021 meeting of The International Society for Music Information Retrieval was the second fully virtual conference that occurred since the beginning of ISMIR, following the virtual conference organized by the team in Montreal in 2020. ISMIR 2021 was conceptualized and planned as an online-only conference due to the COVID19 pandemic. Going completely virtual also offered opportunities to recruit a diverse team from different countries. 
 
     This report describes the design, organization, execution and results of ISMIR 2021 conference with recommendations for future ISMIR organizers.  
 
-    The sections are organized to present information from each group of chairs. The organization team consisted of the following chairs and people:
+    \subsection{Personnel}
+        The sections in the following are roughly organized to present information from each group of chairs. The organization team consisted of the following chairs and people:
 
-    \begin{itemize}
-        \item   General chairs: Jin Ha Lee, Alexander Lerch
-        \item   Scientific program chairs: Zhiyao Duan, Juhan Nam, Preeti Rao, Peter van Kranenburg
-        \item   Diversity and inclusion chairs: Blair Kaneshiro, Jordan Smith
-        \item   Technology chairs: Sharath Adavanne, Stefan Balke, Hendrik Schreiber, Fabian-Robert Stöter
-        \item   Social program chair: Oriol Nieto
-        \item   Tutorial program chairs: Yi-Hsuan Yang, Ashis Pati
-        \item   Late breaking demo program chairs: Li Su, Chih-Wei Wu, Siddharth Gururani
-        \item   Music program chairs: Carlos Guedes, Bochen Li
-        \item   Publications chair: Ajay Srinivasamurthy
-        \item   Sponsorship chairs: Sertan \c{S}entürk, Alia Morsi, Lamtharn “Hanoi” Hantrakul
-        \item   Social media chair: Qhansa Bayu
-        \item   Volunteering chair: Kahyun Choi
-        \item   Lab showcases chair: Lele Liu
-        \item   Newcomer initiatives chairs: Nick Gang, Elona Shatri
-        \item   Website chairs: Ashvala Vinay
-    \end{itemize}
+        \begin{itemize}
+            \item   General chairs: Jin Ha Lee, Alexander Lerch
+            \item   Scientific program chairs: Zhiyao Duan, Juhan Nam, Preeti Rao, Peter van Kranenburg
+            \item   Diversity and inclusion chairs: Blair Kaneshiro, Jordan Smith
+            \item   Technology chairs: Sharath Adavanne, Stefan Balke, Hendrik Schreiber, Fabian-Robert Stöter
+            \item   Social program chair: Oriol Nieto
+            \item   Tutorial program chairs: Yi-Hsuan Yang, Ashis Pati
+            \item   Late breaking demo program chairs: Li Su, Chih-Wei Wu, Siddharth Gururani
+            \item   Music program chairs: Carlos Guedes, Bochen Li
+            \item   Publications chair: Ajay Srinivasamurthy
+            \item   Sponsorship chairs: Sertan \c{S}entürk, Alia Morsi, Lamtharn “Hanoi” Hantrakul
+            \item   Social media chair: Qhansa Bayu
+            \item   Volunteering chair: Kahyun Choi
+            \item   Lab showcases chair: Lele Liu
+            \item   Newcomer initiatives chairs: Nick Gang, Elona Shatri
+            \item   Website chairs: Ashvala Vinay
+        \end{itemize}
 
-\section{Goals and Initiatives Summary}
-    Our goal was to ensure that we continue to keep the ISMIR community strong and connected through this unprecedented global challenge. In addition, this year’s ISMIR focused on maximizing the benefit of the online mode in terms of broadening our research and increasing the accessibility to the conference. The following new initiatives were introduced to support those goals: 
-    \begin{itemize}
-        \item   Increased accessibility to the conference: We wanted to ensure that the registration fee stays low, especially for student participants. Furthermore, we focused on securing funding from sponsors to enable us to offer various kinds of financial support to participants, especially students, women, and caregivers. 
-        \item   Newcomer initiatives: There were a number of initiatives such as the newcomer squads, sessions targeted for newcomers, blog posts explaining different aspects of participating in the conference, and LBD session specifically for ``New to ISMIR'' to help encourage participation from people who have never been to ISMIR in the past. 
-        \item   Special paper track: A Special Call for Papers focusing on the theme of Cultural Diversity in MIR promoted diversity of MIR research as well as the ISMIR community. 
-    \end{itemize}
+    \subsection{Goals and Initiatives Summary}
+        Our goal was to ensure that we continue to keep the ISMIR community strong and connected through this unprecedented global challenge. In addition, this year’s ISMIR focused on maximizing the benefit of the online mode in terms of broadening our research and increasing the accessibility to the conference. The following new initiatives were introduced to support those goals: 
+        \begin{itemize}
+            \item   Increased accessibility to the conference: We wanted to ensure that the registration fee stays low, especially for student participants. Furthermore, we focused on securing funding from sponsors to enable us to offer various kinds of financial support to participants, especially students, women, and caregivers. 
+            \item   Newcomer initiatives: There were a number of initiatives such as the newcomer squads, sessions targeted for newcomers, blog posts explaining different aspects of participating in the conference, and LBD session specifically for ``New to ISMIR'' to help encourage participation from people who have never been to ISMIR in the past. 
+            \item   Special paper track: A Special Call for Papers focusing on the theme of Cultural Diversity in MIR promoted diversity of MIR research as well as the ISMIR community. 
+        \end{itemize}
 
-    Furthermore, the following new initiatives were implemented to enrich our conference experience:
-    \begin{itemize}
-        \item   Best paper candidate presentation sessions: All the candidates of the best paper awards were given a separate session in which they could give an oral presentation of their work and answer questions.
-        \item   Extended social program: Based on survey results from ISMIR 2020 requesting more opportunities to connect with each other, we implemented different social programs such as the use of Gather.town, virtual jam sessions, trivia, etc.
-        \item   Lab showcases: To further support the connections between different labs and interested students, we implemented a lab showcase program.
-        \item   Instead of using a single conference platform, we used a number of different platforms including Midspace, Gather.town, and Zoom to maximize the benefits of each platform. We focused on putting extra attention to ensure that we minimize the confusion that could arise due to platform switching. 
-    \end{itemize}
+        Furthermore, the following new initiatives were implemented to enrich our conference experience:
+        \begin{itemize}
+            \item   Best paper candidate presentation sessions: All the candidates of the best paper awards were given a separate session in which they could give an oral presentation of their work and answer questions.
+            \item   Extended social program: Based on survey results from ISMIR 2020 requesting more opportunities to connect with each other, we implemented different social programs such as the use of Gather.town, virtual jam sessions, trivia, etc.
+            \item   Lab showcases: To further support the connections between different labs and interested students, we implemented a lab showcase program.
+            \item   Instead of using a single conference platform, we used a number of different platforms including Midspace, Gather.town, and Zoom to maximize the benefits of each platform. We focused on putting extra attention to ensure that we minimize the confusion that could arise due to platform switching. 
+        \end{itemize}
     
 \section{Conference Schedule and Platforms}
     TODO: Not yet available.
@@ -129,8 +133,8 @@ titlepage,						% Titelei auf eigener Seite
         We continued the following initiatives from previous years:
         \begin{itemize}
             \item   We published a Conference Code of Conduct and asked all participants to agree to it.
-            \item   WiMIR was represented in the main conference program with keynote and meet-up sessions. (see Sects.~\ref{} and \ref{})
-            \item   The WiMIR Workshop (October 29-30) took place as a satellite event. This was not officially planned under the umbrella of “D\&I at ISMIR 2021”, but the D\&I co-chairs (Blair and Jordan) were 2 of the 5 workshop organizers.
+            \item   WiMIR was represented in the main conference program with keynote and meet-up sessions. (see Sects.~\ref{sec:di_plenary} and \ref{sec:di_meetup})
+            \item   The WiMIR Workshop (October 29--30) took place as a satellite event. This was not officially planned under the umbrella of ``D\&I at ISMIR 2021,'' but the D\&I co-chairs (Blair and Jordan) were 2 of the 5 workshop organizers.
             \item   We provided grants to certain categories of attendee, to encourage people from under-represented groups or without means to attend ISMIR. The categories are listed below; those given in italics were introduced this year.
                 \begin{itemize}
                     \item   WiMIR,
@@ -146,11 +150,11 @@ titlepage,						% Titelei auf eigener Seite
 
         We also planned new initiatives:
         \begin{itemize}
-            \item   Authored a series of blog posts to demystify MIR (see Sect.~\ref{}):
+            \item   Authored a series of blog posts to demystify MIR (see Sect.~\ref{sec:di_blog}):
                Conducted community surveys and wrote blog posts aiming to demystify paper writing, reviewing, and the conference.
-            \item   Held two D\&I meetup sessions (see Sect.~\ref{}):
+            \item   Held two D\&I meetup sessions (see Sect.~\ref{sec:di_meetup}):
                Opportunities to engage in discussion with invited ISMIR and WiMIR panelists on current topics of interest. 
-            \item   Newcomer Initiatives: blog post and Newcomer Squads (see Sect.~\ref{}):
+            \item   Newcomer Initiatives: blog post and Newcomer Squads (see Sect.~\ref{sec:di_newcomer}):
                These two initiatives were designed to welcome people new to ISMIR to the conference and to the community.
         \end{itemize}
 
@@ -163,11 +167,11 @@ titlepage,						% Titelei auf eigener Seite
                     \item   Submissions mentored by community volunteers providing constructive feedback.
                     \item   20 of 58 LBD submissions this year are ``New-to-ISMIR.''
                 \end{itemize}
-            \item   Special Call for Papers on ``Cultural Diversity in MIR'' (see Sect.~\ref{})
+            \item   Special Call for Papers on ``Cultural Diversity in MIR'' (see Sect.~\ref{sec:prog_specialcall})
         \end{itemize}
 
     \subsection{D\&I and WiMIR Events During ISMIR 2021}
-        \subsubsection{WiMIR Plenary Session}
+        \subsubsection{WiMIR Plenary Session}\label{sec:di_plenary}
             Decisions and actions:
             \begin{itemize}
                 \item   The plenary session consisted of a short presentation about WiMIR and its activities over the past year, followed by an invited keynote talk by Laurel Smith Pardue.
@@ -191,38 +195,40 @@ titlepage,						% Titelei auf eigener Seite
                 \item   Plan the honorarium payment in advance of the conference so that funds can be paid without delay after the conference.
             \end{itemize}
 
-    \subsection{D\&I Meetup Sessions}
-        Special WiMIR-themed meet-up sessions were introduced in the virtual ISMIR 2020 conference. In these ``Notable Women in MIR'' sessions, conference attendees could engage in informal discussion and Q\&A with an invited woman in the field. The ISMIR 2021 conference continued this tradition. The ISMIR 2021 conference additionally included, for the first time, two meet-up sessions structured as panel discussions that were focused on broader topics relating to D\&I in MIR.
-        
-            Decisions and actions:
-            \begin{itemize}
-                \item   We were allocated 2 meetup sessions per day of the main conference (8 slots total).
-                \item   We transferred the 2 slots on Day 1 to the Newcomer Initiatives team, who hosted sessions on ``Getting the most out the ISMIR conference'' (see Sect.~\ref{}).
-                \item   We allocated the 4 slots on Day 2 and Day 3 for ``Notable women in MIR'' sessions with an invited presenter in each one. (Info: \href{https://ismir2021.ismir.net/wimir}{https://ismir2021.ismir.net/wimir}).
-                \item   We allocated the 2 slots on Day 4 for broader topics: One on ``Broadening D\&I'' and one on ``Local initiatives.'' These were each a panel format, with one of the D\&I chairs moderating a panel of four invited panelists.
-                \item   We sought a slate of guests and panelists to represent a variety of research areas, academic/industry affiliations, career stages, and geographic locations.
-            \end{itemize}
+        \subsubsection{D\&I Meetup Sessions}\label{sec:di_meetup}
+            Special WiMIR-themed meet-up sessions were introduced in the virtual ISMIR 2020 conference. In these ``Notable Women in MIR'' sessions, conference attendees could engage in informal discussion and Q\&A with an invited woman in the field. The ISMIR 2021 conference continued this tradition. The ISMIR 2021 conference additionally included, for the first time, two meet-up sessions structured as panel discussions that were focused on broader topics relating to D\&I in MIR.
+            
+                Decisions and actions:
+                \begin{itemize}
+                    \item   We were allocated 2 meetup sessions per day of the main conference (8 slots total).
+                    \item   We transferred the 2 slots on Day 1 to the Newcomer Initiatives team, who hosted sessions on ``Getting the most out the ISMIR conference'' (see Sect.~\ref{sec:di_newcomer}).
+                    \item   We allocated the 4 slots on Day 2 and Day 3 for ``Notable women in MIR'' sessions with an invited presenter in each one. (Info: \href{https://ismir2021.ismir.net/wimir}{https://ismir2021.ismir.net/wimir}).
+                    \item   We allocated the 2 slots on Day 4 for broader topics: One on ``Broadening D\&I'' and one on ``Local initiatives.'' These were each a panel format, with one of the D\&I chairs moderating a panel of four invited panelists.
+                    \item   We sought a slate of guests and panelists to represent a variety of research areas, academic/industry affiliations, career stages, and geographic locations.
+                \end{itemize}
 
-            Timeline:
-            \begin{itemize}
-                \item   Summer 2021: Discussion on how to program the 8 meetup sessions. One alternative was to allocate 2 sessions each to ``Newcomers,'' ``Women in MIR,'' ``Black in MIR,'' and ``Queer in MIR.''
-                \item   Sep 2021: Final session topic allocation.
-                \item   Oct 2021: Identification and invitation of ``notable women'' and panel members.
-            \end{itemize}
+                Timeline:
+                \begin{itemize}
+                    \item   Summer 2021: Discussion on how to program the 8 meetup sessions. One alternative was to allocate 2 sessions each to ``Newcomers,'' ``Women in MIR,'' ``Black in MIR,'' and ``Queer in MIR.''
+                    \item   Sep 2021: Final session topic allocation.
+                    \item   Oct 2021: Identification and invitation of ``notable women'' and panel members.
+                \end{itemize}
 
-            Recommendations:
-            \begin{itemize}
-                \item   The ISMIR2022 chairs are encouraged to seek meet-up slots throughout the conference to program as they wish.
-                \item   For the ``Notable Women in MIR'' sessions, we invited the four presenters seeking variety in geographical location and academia/industry representation. We were also mindful not to re-invite anyone who had already presented in these sessions in 2020.
-            \end{itemize}
+                Recommendations:
+                \begin{itemize}
+                    \item   The ISMIR2022 chairs are encouraged to seek meet-up slots throughout the conference to program as they wish.
+                    \item   For the ``Notable Women in MIR'' sessions, we invited the four presenters seeking variety in geographical location and academia/industry representation. We were also mindful not to re-invite anyone who had already presented in these sessions in 2020.
+                \end{itemize}
 
-            Programming details:
-            \begin{itemize}
-                \item   Special WiMIR-themed meet-up sessions were introduced in the virtual ISMIR 2020 conference. In these ``Notable Women in MIR'' sessions, conference attendees could engage in informal discussion and Q\&A with an invited woman in the field. The ISMIR 2021 conference continued this tradition, allocating four D\&I meet-up sessions for ``Notable Women in MIR'' sessions with invited presenters Cheng-Zhi Anna Huang (Magenta / Google Brain / Université de Montréal / Mila), Emma Azelborn (iZotope, Inc.), Xiao Hu (The University of Hong Kong), and Katerina Kosta (ByteDance / TikTok).
-                \item   The first session, focused on ``Broadening D\&I,'' included invited panelists Johanna Devaney (Brooklyn College and the Graduate Center, CUNY; WiMIR organizer; former ISMIR conference organizer), Zhiyao Duan (University of Rochester; ISMIR conference organizer), Katie Kinnaird (Smith College; former WiMIR organizer; former ISMIR conference organizer), and Doug Turnbull (Ithaca College; former ISMIR Board member; former ISMIR conference organizer). 
-                \item   The second session, focused on ``Local Initiatives,'' included invited panelists Sakinat Folorunso (Olabisi Onabanjo University; IndabaX Nigeria organizer), Meinard Muller (International Audio Laboratories Erlangen; ISMIR Board President), Elio Quinton (Universal Music Group; London Audio \& Music AI Meetup organizer; WiMIR mentor), and Anja Volk (Utrecht University; former WiMIR organizer; TISMIR co-founder). Each panel was moderated by one of the D\&I chairs.
+                Programming details:
+                \begin{itemize}
+                    \item   Special WiMIR-themed meet-up sessions were introduced in the virtual ISMIR 2020 conference. In these ``Notable Women in MIR'' sessions, conference attendees could engage in informal discussion and Q\&A with an invited woman in the field. The ISMIR 2021 conference continued this tradition, allocating four D\&I meet-up sessions for ``Notable Women in MIR'' sessions with invited presenters Cheng-Zhi Anna Huang (Magenta / Google Brain / Université de Montréal / Mila), Emma Azelborn (iZotope, Inc.), Xiao Hu (The University of Hong Kong), and Katerina Kosta (ByteDance / TikTok).
+                    \item   The first session, focused on ``Broadening D\&I,'' included invited panelists Johanna Devaney (Brooklyn College and the Graduate Center, CUNY; WiMIR organizer; former ISMIR conference organizer), Zhiyao Duan (University of Rochester; ISMIR conference organizer), Katie Kinnaird (Smith College; former WiMIR organizer; former ISMIR conference organizer), and Doug Turnbull (Ithaca College; former ISMIR Board member; former ISMIR conference organizer). 
+                    \item   The second session, focused on ``Local Initiatives,'' included invited panelists Sakinat Folorunso (Olabisi Onabanjo University; IndabaX Nigeria organizer), Meinard Muller (International Audio Laboratories Erlangen; ISMIR Board President), Elio Quinton (Universal Music Group; London Audio \& Music AI Meetup organizer; WiMIR mentor), and Anja Volk (Utrecht University; former WiMIR organizer; TISMIR co-founder). Each panel was moderated by one of the D\&I chairs.
 
-            \end{itemize}
+                \end{itemize}
+
+
     \subsection{D\&I Organizing Responsibilities}
         In addition to organizing the above events during the conference, we also were responsible for other items.
         
@@ -254,7 +260,7 @@ titlepage,						% Titelei auf eigener Seite
 
             TODO: Recommendations for future ISMIR conferences
             
-        \subsubsection{D\&I Blog Posts}
+        \subsubsection{D\&I Blog Posts}\label{sec:di_blog}
             TODO: [see blog post for motivation]
 
             TODO: [see blog page for posts]
@@ -275,7 +281,7 @@ titlepage,						% Titelei auf eigener Seite
 
             TODO: Recommendations for future ISMIR conferences
             
-    \subsection{Newcomer Initiatives}
+    \subsection{Newcomer Initiatives}\label{sec:di_newcomer}
         TODO: General intro to why we do this
 
         TODO: ``Getting the Most Out of ISMIR'' Blog Post
@@ -322,7 +328,7 @@ titlepage,						% Titelei auf eigener Seite
                 \item   Similar to ISMIR 2020, we did not install a rebuttal mechanism in ISMIR 2021. We also removed the author feedback form from ISMIR 2020 that was designed for authors to voice in case they strongly feel unfair treatment; This is because this form did not work well and it was not meant to change the review result. Nonetheless, we received several emails complaining about the reviews and it was not easy to respond to each of the authors and persuade them. We believe that adding a rebuttal mechanism might be helpful for resolving these rare but important issues.We note that ICASSP 2022 installed a rebuttal mechanism for the first time, and it seemed to work well.
             \end{itemize}
         
-        \subsubsection{Special Call for Papers}
+        \subsubsection{Special Call for Papers}\label{sec:prog_specialcall}
             We think that the special call for papers on cultural diversity in MIR research was successful. This is reflected from the amount of submissions we have received (40 special call submission among the overall 278 submissions). The main feedback and reflection we have is that the review criteria for the special call might be too strict (or less suitable). We designed the special call so that all submissions went through exactly the same review process and were evaluated using the same criteria. However, some authors and reviewers complained that certain reviews were too strict due to unconscious biases. In-depth discussions about these issues among community members were held in Special Session 3. We recognize such biases, and suggest future organizers of this special call or other special calls to consider these issues. Possible ways to address these issues include 1) raising the awareness of such issues in communications with reviewers, 2) add questions in the review form that are suited to judgment criteria for the special call, and 3) implement “affirmative action” type of mechanisms in the final decision process.
 
         \subsection{Notes from 2020 chairs}
@@ -343,7 +349,7 @@ titlepage,						% Titelei auf eigener Seite
 
         \subsubsection{Special Session 1: MIR for Human Health and Potential Panel}
         \begin{itemize}
-            \item Time: 3:30-4:30 AM on November 9, 2021 (UTC)
+            \item Time: 3:30--4:30 AM on November 9, 2021 (UTC)
             \item   Moderator: Ye Wang, National University of Singapore, Singapore
             \item   Panelists: Frank Russo (Ryerson University, Canada), Elaine Chew (CNRS – STMS (IRCAM), France), Gus Xia (NYU Shanghai, China), Blair Kaneshiro (Stanford University, USA)
 
@@ -351,7 +357,7 @@ titlepage,						% Titelei auf eigener Seite
         
         \paragraph{Closing Remarks}
         \begin{itemize}
-            \item   The COVID?19 pandemic has made music more important as a medium to connect people, to enhance both physical and mental health, and to advance human potential
+            \item   The COVID-19 pandemic has made music more important as a medium to connect people, to enhance both physical and mental health, and to advance human potential
             \item   Social distancing measures have greatly enhanced interest in eHealth and eLearning
             \item   Integrating music into digital health/learning technologies helps to make music interventions accessible, scalable, and personalized
             \item   Research at the intersection of neuroscience, medicine, the science of learning, and MIR has the potential to reveal new insights into individual variability and personalized interventions
@@ -359,9 +365,9 @@ titlepage,						% Titelei auf eigener Seite
             \item   Our panelists have already shown that it is possible to match their research interests to address important problems in the direction of human health and potential
             \item   Future plans
                 \begin{itemize}
-                    \item   One hour is certainly too short for an in?depth discussion of such an important topic. We hope to form a SIG within the community to continue the discussion offline, and more regularly.
-                    \item   Perhaps we could consider a workshop in ISMIR2022, or a Dagstuhl?style seminar next year.
-                    \item   If you are interested in our future discussions, please send me an email to wangye@comp.nus.edu.sg
+                    \item   One hour is certainly too short for an in-depth discussion of such an important topic. We hope to form a SIG within the community to continue the discussion offline, and more regularly.
+                    \item   Perhaps we could consider a workshop in ISMIR2022, or a Dagstuhl-style seminar next year.
+                    \item   If interested in our future discussions, please send me an email to wangye@comp.nus.edu.sg
 
                 \end{itemize}
         \end{itemize}
@@ -369,7 +375,7 @@ titlepage,						% Titelei auf eigener Seite
  
         \subsubsection{Special Session 2: IMS Digital Musicology Study Group}
         \begin{itemize}
-            \item   Time: 3:30-5:00 PM on November 9, 2021 (UTC)
+            \item   Time: 3:30--5:00 PM on November 9, 2021 (UTC)
 
             \item   Moderators: Johanna Devaney (Brooklyn College and the Graduate Center, CUNY, USA) and Frans Wiering (Utrecht University, The Netherlands)
         \end{itemize}
@@ -377,7 +383,7 @@ titlepage,						% Titelei auf eigener Seite
 
         \subsubsection{Special Session 3: Promoting Cultural Diversity in MIR Research}
             \begin{itemize}
-                \item   Time: 4-5 AM on November 10, 2021 (UTC)
+                \item   Time: 4--5 AM on November 10, 2021 (UTC)
 
                 \item   Moderator: Scientific Program Co-Chairs
 
@@ -405,7 +411,7 @@ titlepage,						% Titelei auf eigener Seite
 
         \subsubsection{Special Session 4: Computational Creativity for Music}
         \begin{itemize}
-            \item Time: 2:30-3:30 PM on November 10, 2021 (UTC)
+            \item Time: 2:30--3:30 PM on November 10, 2021 (UTC)
 
             \item   Moderator: Tom Collins (University of York, UK, Music Artificial Intelligence Algorithms, Inc., USA)
 
@@ -414,7 +420,7 @@ titlepage,						% Titelei auf eigener Seite
 
         \subsubsection{Special Session 5: MIR for Music Education}
         \begin{itemize}
-            \item   Time: 4-5 PM on November 10, 2021 (UTC)
+            \item   Time: 4--5 PM on November 10, 2021 (UTC)
             \item   Moderator: Roger Dannenberg (Carnegie Mellon University, USA)
             \item   Panelists: Zhiyao Duan (University of Rochester, USA), Anssi Klapuri (Yousician, Finland), Alexander Lerch (Georgia Institute of Technology, USA), Daniel Ray (Muse Group, UK)
 
@@ -422,7 +428,7 @@ titlepage,						% Titelei auf eigener Seite
 
         \subsubsection{Special Session 6: Ethical issues in Music AI --- Perspectives on authorship with creative artificial intelligence in music}
         \begin{itemize}
-            \item   Time: 2.30-3.30 PM on November 11, 2021 (UTC)
+            \item   Time: 2.30--3.30 PM on November 11, 2021 (UTC)
             \item   Panelists: Andre Holzapfel (KTH Royal Institute of Technology, Sweden), Petra Pauliina Jääskeläinen (KTH Royal Institute of Technology, Sweden), Anna-Kaisa Kaila (KTH Royal Institute of Technology, Sweden), Sertan \c{S}entürk (Kobalt Music Group, United Kingdom) 
         \end{itemize}
 
@@ -542,7 +548,7 @@ titlepage,						% Titelei auf eigener Seite
             \begin{itemize}
                 \item   Due to the online format of the conference, each tutorial is supposed to have two sessions, which we called session A and session B, so that participants from different time zones may have the chance to take part in at least one of them.
 
-                \item   We created a google sheet and figured out six possible time slots for the proposal (\href{https://docs.google.com/spreadsheets/d/1qPUy-69GDe-Hoo7AvFkFofvxCdZQssBgtf5RAILmPHs/edit#gid=0}{https://docs.google.com/spreadsheets/d/1qPUy-69GDe-Hoo7AvFkFofvxCdZQssBgtf5RAILmPHs/edit\#gid=0}) 
+                \item   We created a google sheet and figured out six possible time slots for the proposal:\\ \href{https://docs.google.com/spreadsheets/d/1qPUy-69GDe-Hoo7AvFkFofvxCdZQssBgtf5RAILmPHs/edit#gid=0}{docs.google.com/spreadsheets/d/1qPUy-69GDe-Hoo7AvFkFofvxCdZQssBgtf5RAILmPHs/edit\#gid=0}
 
                 \item We internally discussed which time slots would be the best for different teams of tutorial speakers, considering their time zones.  (For example, to avoid asking a speaker to present in his/her midnight)
 
@@ -669,19 +675,20 @@ titlepage,						% Titelei auf eigener Seite
                 \item Masterclass 1: CV
                     \begin{itemize}
                         \item   Time: 3.00-4.00 AM on November 12, 2021 (UTC)
-                        \item   Panelists: Christopher Bakes (ByteDance/TikTok,USA), Lamtharn “Hanoi” Hantrakul (ByteDance/TikTok, China)
+                        \item   Panelists: Christopher Bakes (ByteDance / TikTok, USA), Lamtharn “Hanoi” Hantrakul (ByteDance / TikTok, China)
                     \end{itemize}
                 \item Masterclass 2: System Design Interview
                     \begin{itemize}
                         \item   Time: 15.00-16.00 AM on November 12, 2021 (UTC)
-                        \item   Panelists: Peter Sobot (Spotify, USA), Lamtharn “Hanoi” Hantrakul~(ByteDance/TikTok, China), Sertan \c{S}entürk (Kobalt Music Group, United Kingdom)
+                        \item   Panelists: Peter Sobot (Spotify, USA), Lamtharn “Hanoi” Hantrakul~(ByteDance / TikTok, China), Sertan \c{S}entürk (Kobalt Music Group, United Kingdom)
                     \end{itemize}
             \end{itemize}
     
     \subsection{Lab Showcase}
         This year, we introduced a new event called the Lab Showcase to the ISMIR conference. Academic labs focusing on MIR research were invited to showcase their lab at virtual booths. There are in total 33 lab participants across 17 different countries (see Fig.~\ref{fig:labshowcase_country}). By introducing the Lab Showcase, we hope to give a perspective on MIR research world-wide, enable connections between institutions and prospective students or collaborators, and make it easier to reach out to and learn more about various labs across the globe.
         \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/labshowcase_country}%
+            \centering
+            \includegraphics{fig/labshowcase_country}%
             \caption{Number of participating labs per country}%
             \label{fig:labshowcase_country}%
         \end{figure}
@@ -710,12 +717,14 @@ We decided to provide more freedom for labs by not providing strict template for
         \subsubsection{Post-conference Feedback}
             Generally, the participants look to be satisfied with the new activity. Among those who participated in the lab showcase from the post-conference survey, 85\% of them reported that they are at least ``moderately satisfied'' (see Fig.~\ref{fig:labshowcase_satisfaction}). 64\% participants reported that they are expecting the same emphasis on lab showcases in future ISMIRs (see Fig.~\ref{fig:labshowcase_future}).
         \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/labshowcase_satisfaction}%
+            \centering
+            \includegraphics[scale=.8]{fig/labshowcase_satisfaction}%
             \caption{Satisfaction with the lab showcase}%
             \label{fig:labshowcase_satisfaction}%
         \end{figure}
         \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/labshowcase_future}%
+            \centering
+            \includegraphics[scale=.8]{fig/labshowcase_future}%
             \caption{Lab showcases at future ISMIRs}%
             \label{fig:labshowcase_future}%
         \end{figure}
@@ -788,12 +797,14 @@ We decided to provide more freedom for labs by not providing strict template for
         
         To the best of our knowledge, ISMIR 2021 has seen the most sponsors and largest sponsorship income than all ISMIR conferences in the past. But, more importantly, we managed to increase the revenue by 40\ and onboard five additional sponsors compared to ISMIR 2020, effectively returning the sponsor presence in the conference back to the pre-pandemic levels. Figure~\ref{fig:sponsorship_amount} shows the sponsorship income and Fig.~\ref{fig:sponsorship_tiers} shows the number of sponsors for the ISMIR conference (i.e., excluding WiMIR sponsorship) by tier in the last five years.  
         \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/sponsorship_amount}%
+            \centering
+            \includegraphics{fig/sponsorship_amount}%
             \caption{Overall sponsorship amount}%
             \label{fig:sponsorship_amount}%
         \end{figure}
         \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/sponsorship_tiers}%
+            \centering
+            \includegraphics{fig/sponsorship_tiers}%
             \caption{Number of sponsors per tiers}%
             \label{fig:sponsorship_tiers}%
         \end{figure}
@@ -806,6 +817,7 @@ We decided to provide more freedom for labs by not providing strict template for
         
         
         \begin{table}
+            \centering
             \begin{tabular}{l|l|l|l}
                 \textbf{Industry Session} & \textbf{\# Sessions} & \textbf{Participants} & \textbf{Attendance}\\ \hline
                 
@@ -829,7 +841,8 @@ We decided to provide more freedom for labs by not providing strict template for
 
         ISMIR and WiMIR Sponsors were highly satisfied by the Sponsorship \& Industry, and Diversity \& Inclusion work in the conference, respectively. The results are shown in Fig.~\ref{fig:sponsorship_feedback}.
         \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/sponsorship_feedback}%
+        \centering
+            \includegraphics[scale = .8]{fig/sponsorship_feedback}%
             \caption{Sponsor satisfaction}%
             \label{fig:sponsorship_feedback}%
         \end{figure}
@@ -886,7 +899,8 @@ We decided to provide more freedom for labs by not providing strict template for
         \begin{itemize}
             \item Twitter: 1412 (Increased by 78.5\% from 796 ISMIR2020 followers), see Fig.~\ref{fig:socialmedia_twitter}
                 \begin{figure}%
-                    \includegraphics[width=\columnwidth]{fig/socialmedia_twitter}%
+                    \centering
+                    \includegraphics[scale=.8]{fig/socialmedia_twitter}%
                     \caption{Sponsor satisfaction}%
                     \label{fig:socialmedia_twitter}%
                 \end{figure}
@@ -952,12 +966,13 @@ Once again, ISMIR proves to be my favorite conference thanks to its amazingly we
         \begin{itemize}
             \item We categorized the time zones of the volunteers into three groups to make sure our volunteers could support people all around the world.
                 \begin{itemize}
-                    \item Timezone1: UTC-11 - UTC-3
-                    \item   Timezone2: UTC+3 - UTC+10
-                    \item   Timezone3: UTC -2 - UTC+2
+                    \item Timezone1: UTC-11 --- UTC-3
+                    \item   Timezone2: UTC+3 --- UTC+10
+                    \item   Timezone3: UTC-2 --- UTC+2
                 \end{itemize}
             \item   Of 61 volunteers that we had initially recruited, 52 volunteers were assigned to 7 teams. Table~\ref{tab:volunteers}shows the distribution of the volunteers per team and timezone. 
                 \begin{table}
+                    \centering
                     \begin{tabular}{l|l|l|l|l}
                         \textbf{Team} & \textbf{TZ1} & \textbf{TZ2} & \textbf{TZ3} & \textbf{Total}\\ \hline
                         
@@ -1018,7 +1033,7 @@ To show our appreciation for your support, volunteers will receive a registratio
 
 ISMIR is a unique community where music, people, and technologies meet. As a volunteer, you can have an opportunity to join the community and get to know like-minded people. Also, your contribution is essential to build a thriving research community.  
 
-Name of the vol chair
+Name of the vol chair\\
 ISMIR 2021 Volunteer Chair
 
                         \end{quote}
@@ -1029,14 +1044,14 @@ ISMIR 2021 Volunteer Chair
 We are looking for more volunteers for ISMIR 2021 (https://ismir2021.ismir.net), which is virtual this year. As ISMIR is a globally accessible conference, we welcome volunteers from all around the world. The main tasks are supporting the organization team and managing the virtual conference platform (e.g., quality checking the presentation videos, creating accounts for the conference platform, troubleshooting, etc.) Anyone is eligible for the position as long as you are willing and available to support this conference.
 
 If you are interested in volunteering for ISMIR 2021, please fill out the form below by October 29. Please apply soon if you are interested, as we may close the application sooner if we have enough people. We will allocate the best task and date for you based on your availability and timezone. We will also make sure that volunteers can enjoy the conference as participants by asking them for only a reasonable amount of time. 
-Link to the form: 
-\href{https://docs.google.com/forms/d/e/1FAIpQLSedTSIhMfNIj_fX-o5NscKNT9eTxukR5QTR1Giv1oF18qcF6w/viewform?usp=pp_url}{https://docs.google.com/forms/d/e/1FAIpQLSedTSIhMfNIj\_fX-o5NscKNT9eTxukR5QTR1Giv1oF18qcF6w/viewform?usp=pp\_url}
+Link to the form:\\ 
+\href{https://docs.google.com/forms/d/e/1FAIpQLSedTSIhMfNIj_fX-o5NscKNT9eTxukR5QTR1Giv1oF18qcF6w/viewform?usp=pp_url}{docs.google.com/forms/d/e/1FAIpQLSedTSIhMfNIj\_fX-o5NscKNT9eTxukR5QTR1Giv1oF18qcF6w/viewform?usp=pp\_url}
 
 To show our appreciation for your support, volunteers will receive a registration fee waiver and will be featured on our organization team webpage with a photo and short bio. 
 
 ISMIR is a unique community where music, people, and technologies meet. As a volunteer, you can have an opportunity to join the community and get to know like-minded people. Also, your contribution is essential to build a thriving research community.  
 
-Name of the vol chair
+Name of the vol chair\\
 ISMIR 2021 Volunteer Chair
 
                         \end{quote}
@@ -1058,6 +1073,7 @@ Ultimately, however, the use of the Georgia Tech Marketplace was an easy choice 
 \section{Budget}
     A combination of unexpected support from sponsors, an unprecedented number of registrations, and conservative budget planning led to the ISMIR conference making a considerable plus. The biggest expenses are listed in Table~\ref{tab:expenses}.
                 \begin{table}
+                    \centering
                     \begin{tabular}{l|r}
                         \textbf{Item} & \textbf{Approximate amount (x1000)}\\ \hline
                         
@@ -1075,6 +1091,7 @@ Ultimately, however, the use of the Georgia Tech Marketplace was an easy choice 
                 \end{table}
                 The main incoming budget items are listed in Table~\ref{tab:income}.
                 \begin{table}
+                    \centering
                     \begin{tabular}{l|r}
                         \textbf{Item} & \textbf{Approximate amount (x1000)}\\ \hline
                         
@@ -1099,7 +1116,8 @@ The results of the post-conference survey with 148 participants indicated that t
     \subsection{Satisfaction}
         Generally, the attendees seemed to be satisfied with the conference: Fig.~\ref{fig:survey_satisfaction} shows that 77\% of survey respondents state that they were at least somewhat satisfied.
         \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/survey_satisfaction}%
+            \centering
+            \includegraphics[scale=.8]{fig/survey_satisfaction}%
             \caption{Participant satisfaction}%
             \label{fig:survey_satisfaction}%
         \end{figure}
@@ -1115,14 +1133,16 @@ The results of the post-conference survey with 148 participants indicated that t
         
         Comparing a virtual conference with a traditional on-site conference shows that a majority of participants feel that the conference participation is more constrained by obligations (mostly work and time zones) as shown in Fig.~\ref{fig:survey_constraints}.
          \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/survey_constraints}%
+            \centering
+            \includegraphics[scale=.8]{fig/survey_constraints}%
             \caption{Participant constraints during the conference}%
             \label{fig:survey_constraints}%
         \end{figure}
         
         Figure~\ref{fig:survey_onsite} compares the virutal conference experience with an on-site conference and shows that many of the program items are rated equally or worse for the online-only conference.
           \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/survey_onsite}%
+            \centering
+            \includegraphics[scale=.8]{fig/survey_onsite}%
             \caption{Virtual conference vs.\ On-site}%
             \label{fig:survey_onsite}%
         \end{figure}
@@ -1130,15 +1150,16 @@ The results of the post-conference survey with 148 participants indicated that t
     \subsection{Outlook}
         Survey responses shown in Fig.~\ref{fig:survey_future} indicate that a majority of attendees appreciate the mix of program items and want to keep most items similarly represented in future ISMIR conferences, potentially a bit more of everything. The items that a slightly larger group of attendees wants to emphasize more are Oral Presentations, the social program, as well as D\&I and Newcomer initiatives.
           \begin{figure}%
-            \includegraphics[width=\columnwidth]{fig/survey_future}%
+            \centering
+            \includegraphics[scale=.8]{fig/survey_future}%
             \caption{Emphasis on future program items}%
             \label{fig:survey_future}%
         \end{figure}
 
-    \subsection{Outlook}
-        ISMIR had three satellite events (WiMIR workshop, NLP4MusA, and MDX). DLfM, a satellite in previous years, did not communicate any reasons for joining another conference.
+\section{Satellite Events}
+    ISMIR had three satellite events (WiMIR workshop, NLP4MusA, and MDX). DLfM, a satellite in previous years, did not communicate any reasons for joining another conference.
 
-        All satellite events were organized largely independent from the main event. While WiMIR did not require any registration, it helped that attendees of the other satellite events registered through the same system similarly to normal ISMIR attendees. In retrospect, the satellite event fees for non-ISMIR participants (registration was free in combination with an ISMIR registration) would not have been necessary; however, at the time of planning there were concerns that the number of satellite participants could potentially be higher than the number of ISMIR participants, so it was decided to charge the platform cost for non-ISMIR attendees.
+    All satellite events were organized largely independent from the main event. While WiMIR did not require any registration, it helped that attendees of the other satellite events registered through the same system similarly to normal ISMIR attendees. In retrospect, the satellite event fees for non-ISMIR participants (registration was free in combination with an ISMIR registration) would not have been necessary; however, at the time of planning there were concerns that the number of satellite participants could potentially be higher than the number of ISMIR participants, so it was decided to charge the platform cost for non-ISMIR attendees.
 
       
 
