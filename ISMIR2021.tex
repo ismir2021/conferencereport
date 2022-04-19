@@ -160,7 +160,7 @@ titlepage,						% Titelei auf eigener Seite
 Timeline
 \begin{itemize}
     \item 03/2021: Tech Chair committee established
-    \item 03/2021: Initial platform look-ups (Remo, Midspace, Gater)
+    \item 03/2021: Initial platform look-ups (Remo, Midspace, Gather)
     \item 05/2021: Midspace negotiations started
     \item late 08/2021: Contract with Midspace was signed (in the end through the ISMIR board)
     \item Meantime: Getting scripts ready to include the schedule and content in Midspace
@@ -171,7 +171,7 @@ Timeline
 
 \subsection{Platform Overview}
 
-Since ISMIR 2021 was full digital, the conference platform is maybe the most essential part where all things glue together and most of the magic should happen.
+Since ISMIR 2021 was fully digital, the conference platform is maybe the most essential part where all things glue together and most of the magic should happen.
 
 \begin{itemize}
     \item Go Faro...
@@ -180,19 +180,23 @@ Since ISMIR 2021 was full digital, the conference platform is maybe the most ess
     \item \textbf{Gather:}
 \end{itemize}
 
-\subsection{Code Artifacts and populating content}
+\subsection{Code Artifacts and Populating Content}
 
 \begin{itemize}
-    \item Go Hendrik...
-    \item 
+    \item In order to be able to repeat the setup as quickly as possible, should things go haywire, we decided to script much of the bulk data import to Midspace. The code is hosted on \href{https://github.com/ismir/ismir-2021-utils}{GitHub}.
+    \item Eligible data for this were presenters and their presentations (people, posters, videos), the schedule (\emph{when} something happens), and other events (\emph{what} happens at one or multiple times).
+    \item This required attempting to collect the necessary data from various sources as early as possible (to leave room for errors).
+    \item To make providing data as easy as possible for the other chairs, we attempted to support simplified data import formats, instead of the more comprehensive, original Midspace formats.
+    \item Once the conference start was very close, we switched over to manual data entry.
+    \item Because the registration system (which was not chosen by the tech chairs) did not offer a suitable API, authors and attendees had to be imported into Midspace manually by running custom-coded scripts.
 \end{itemize}
 
 \subsection{Running the Conference}
 
 \begin{itemize}
     \item A \href{https://docs.google.com/spreadsheets/d/1ENeS3DyxSxWQGRSsiMsHuddwmdlg6r_4tH6VTcvLgMg/edit?usp=sharing}{storyboard} was created for the entire conference with the complete details of each session - start and end time (timezone appropriate), session chairs, panelists (if any), platform used, direct link to the session (if any). Further, each session was assigned one tech-chair and a tech-volunteer. 
-    \item The main task of the tech-volunteers were to help session chairs and authors to seamlessly navigate the conference platforms. The tech-chairs were only a stand-by options for worst case scenarios - when admin access was required to make changes to the platform or if the tech-volunteer couldn't make it to the session.
-    \item As the tech-volunteers we recruited 3-4 students~\ref{sssec:vol} across each of the three timezones, that roughly corresponds to Asia, Europe and US timezones. We had 12 volunteers in total.
+    \item The main task of the tech-volunteers was to help session chairs and authors to seamlessly navigate the conference platforms. The tech-chairs were only a stand-by option for worst case scenarios---when admin access was required to make changes to the platform or when the tech-volunteer couldn't make it to the session.
+    \item As tech-volunteers we recruited 3-4 students (see~\ref{sssec:vol}) across each of the three timezones, that roughly correspond to Asia, Europe and US timezones. We had 12 volunteers in total.
     \item A couple of weeks before the conference, all tech-volunteers were given a walkthrough of the conference platforms and a live demo of how to manage the platforms.
     \item During the conference, the respective tech-chairs would remind the responsible tech-volunteers of the sessions a day earlier. 
     
@@ -204,12 +208,16 @@ Since ISMIR 2021 was full digital, the conference platform is maybe the most ess
 \subsection{Lesson's Learned}
 
 \begin{itemize}
-    \item Negotiation of contracts, especially in the US, seem to be way underestimated by us. Start that early, if things go bogus, include the board, they are more than willing to help out.
-    \item Splitting of registration and conference system created unnecessary extra work. Make sure that both your systems has APIs that you can connect.
-    \item Get tech chairs from every time zone (maybe plus a backup). After one of the chairs quitted, we lost the US time zones which led to early morning/late night shifts for us Indians and Europeans.
+    \item Negotiation of contracts, especially in the US, seem to have been way underestimated by us. Start that early, if things go bogus, include the board, they are more than willing to help out.
+    \item Create a master document very early on that contains all times in UTC and is \emph{easily} parsable. Specifically, we recommend not use spreadsheets or other formats that are parseable in principal, but will inevitably lead to various avoidable hiccups.
+    \item Acknowledge the nature and relationships of your scheduling data entities early on: You have content that may be presented multiple times, sometimes live, sometimes as recording, sometimes under the same title, but with different participants, sometimes followed by a live Q\&A session, sometimes artificially limited due to some sponsorship deal, etc. Assign appropriate labels to your events that present such content. We had to spend a lot of time collecting this data, because it was not thought of in the schedule creation phase.
+    \item Assign unique ids to all your schedule items (events) and their content, to avoid having to do string matching of titles that happen to change just before the conference starts.
+    \item We all have full lives and jobs. So while some people deliver content on time, many deliver late or require changes---and changes to the changes. Ensure the system is ready to run at least six weeks before the conference (especially, if the chosen system supports content upload by paper authors) and set a hard deadline for \emph{everybody} who delivers content no less than two weeks before the conference. Ensure that the general chairs are on board with this and are willing to enforce it.
+    \item Splitting of registration and conference system created unnecessary extra work. Make sure that both your systems have APIs that you can connect.
+    \item Get tech chairs from every time zone (maybe plus a backup). After one of the chairs quit, we lost the US time zones which led to early morning/late night shifts for us Indians and Europeans.
     \item You cannot avoid pressure situation (e.g.,~board meeting with all participants in one room), so make sure you really know the pitfalls of the system (e.g.,~at one point we did not see the control panels since the browser window was too small).
-    \item For the four of us, it was a lot of work and responsibility. Basically, we all paused our main occupations for at least one week. For future ``all-digital'' ISMIRs, you should consider hiring and paying people for this because it is simply too much for a community service.
-    \item Poster sessions in midspace was not a great experience - with the user having to enter and exit video calls of each of the poster. Consider organising the poster sessions in Gathertown in the future, which allows seamless navigation in the poster area, allowing the participants to talk with the nearby participants and authors.
+    \item For the four of us, it was a lot of work and responsibility. Basically, we all paused our main occupations for at least one week. For future ``all-digital'' ISMIRs, you should consider hiring and paying people for this, because it is simply too much for a community service.
+    \item Poster sessions in midspace were not a great experience---with the user having to enter and exit video calls of each of the poster. Consider organising the poster sessions in Gathertown in the future, which allows seamless navigation in the poster area, allowing the participants to talk with the nearby participants and authors.
 \end{itemize}
 
 \section{Diversity, Inclusion, and Newcomer Initiatives}
