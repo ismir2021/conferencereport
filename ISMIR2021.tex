@@ -35,6 +35,7 @@ titlepage,						% Titelei auf eigener Seite
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{subcaption}
 
 \usepackage{lmodern} 
 \usepackage{paralist} 
@@ -157,97 +158,95 @@ titlepage,						% Titelei auf eigener Seite
 
 \section{Conference Platforms}
 
-\textbf{Timeline}
+    Timeline:
+    \begin{itemize}
+        \item 03/2021: Tech Chair committee established
+        \item 03/2021: Initial platform look-ups (Remo, Midspace, Gather)
+        \item 05/2021: Midspace negotiations started
+        \item late 08/2021: Contract with Midspace was signed (in the end through the ISMIR board)
+        \item Meantime: Getting scripts ready to include the schedule and content in Midspace
+        \item 08/2021: Gather.town booking request.
+        \item 10/2021: Gather.town map design started. We contracted a graphic designer to design the gather town map \href{https://www.fiverr.com/jc_shay/create-and-customize-your-gather-town-space-for-you}{via Fiverr}.
+        \item 10/10/2021: Mail with video information out to the authors (mirrored on ISMIR list)
+        \item 11/01/2021: Midspace opened its gates
+        \item 11/07 - 11/12/2021: Running ISMIR 2021
+    \end{itemize}
 
-\begin{itemize}
-    \item 03/2021: Tech Chair committee established
-    \item 03/2021: Initial platform look-ups (Remo, Midspace, Gather)
-    \item 05/2021: Midspace negotiations started
-    \item late 08/2021: Contract with Midspace was signed (in the end through the ISMIR board)
-    \item Meantime: Getting scripts ready to include the schedule and content in Midspace
-    \item 08/2021: Gather.town booking request.
-    \item 10/2021: Gather.town map design started. We contracted a graphic designer to design the gather town map \href{https://www.fiverr.com/jc_shay/create-and-customize-your-gather-town-space-for-you}{via Fiverr}.
-    \item 10/10/2021: Mail with video information out to the authors (mirrored on ISMIR list)
-    \item 11/01/2021: Midspace opened its gates
-    \item 11/07 - 11/12/2021: Running ISMIR 2021
-\end{itemize}
+    \subsection{Platform Overview}
 
-\subsection{Platform Overview}
+        \begin{figure}[t]%
+            \centering
+            \includegraphics[width=0.9\textwidth]{fig/midspace_overview.pdf}%
+            \caption{Overview of Midspace's web-based graphical user interface. (a) Entry screen. (b) Conference schedule. (c) Detail page for a paper.}%
+            \label{fig:midspace}%
+        \end{figure}
 
-\begin{figure}[t]%
-    \centering
-    \includegraphics[width=0.9\textwidth]{fig/midspace_overview.pdf}%
-    \caption{Overview of Midspace's web-based graphical user interface. (a) Entry screen. (b) Conference schedule. (c) Detail page for a paper.}%
-    \label{fig:midspace}%
-\end{figure}
+        Since ISMIR 2021 was fully digital, the conference platforms are the most essential part where all things glue together and most of the ``magic'' happens.
 
-Since ISMIR 2021 was fully digital, the conference platforms are the most essential part where all things glue together and most of the ``magic'' happens.
+        \begin{itemize}
+            \item \textbf{Midspace:} Midspace is an all-in-one solution that provides a centralized web application to manage the conference and to assign respective roles to different sessions. For example, authors or session chairs can be made fully responsible for their respective session content, sending reminders, let authors upload content etc. Figure~\ref{fig:midspace} shows excerpts from Midspace's graphical user interface. We decided to choose midspace as our centralized platform to orchestrate the conference. Midspace integrates a chat system, a video conferencing system (both async for keynotes and live for posters), a conference schedule/calendar and a system to let authors upload their content and videos themselves. Thus, Midspace replaced Slack (chat), miniconf (schedule website) and Dropbox (authors video upload) which were the platform choices of ISMIR 2021. Furthermore, one of the main reasons where that we were offered full support before and during the conference from the Midspace team. 
+            \item \textbf{Zoom:} For a specific number of sessions, we relied on Zoom to facilitate the video conferencing. We used this for several discussion panels and sessions where interactivity was required. We also offered Zoom as a fallback solution for authors that need to present their work with audio sharing but do not have access to an audio loopback software.
+            \item \textbf{Gather:} The gather.town platform is a virtual space where people can connect and collaborate using a virtual room controlling virtual avatars. We used this for the social and music concerts but the virtual space was open to 24/7 throughout the conference. We also created as sponsor hall in gather.town to show the sponsor logos and to connect with the sponsors booth in Midspace.
+        \end{itemize}
 
-\begin{itemize}
-    \item \textbf{Midspace:} Midspace is an all-in-one solution that provides a centralized web application to manage the conference and to assign respective roles to different sessions. For example, authors or session chairs can be made fully responsible for their respective session content, sending reminders, let authors upload content etc. Figure~\ref{fig:midspace} shows excerpts from Midspace's graphical user interface. We decided to choose midspace as our centralized platform to orchestrate the conference. Midspace integrates a chat system, a video conferencing system (both async for keynotes and live for posters), a conference schedule/calendar and a system to let authors upload their content and videos themselves. Thus, midspaces replaced Slack (chat), miniconf (schedule website) and Dropbox (authors video upload) which were the platform choices of ISMIR 2021. Furthermore, one of the main reasons where that we were offered full support before and during the conference from the midspace team. 
-    \item \textbf{Zoom:} For a specific number of sessions, we relied on Zoom to facilitate the video conferencing. We used this for several discussion panels and sessions where interactivity was required. We also offered Zoom as a fallback solution for authors that need to present their work with audio sharing but do not have access to an audio loopback software.
-    \item \textbf{Gather:} The gather.town platform is a virtual space where people can connect and collaborate using a virtual room controlling virtual avatars. We used this for the social and music concerts but the virtual space was open to 24/7 throughout the conference. We also created as sponsor hall in gather.town to show the sponsor logos and to connect with the sponsors booth in midspace.
-\end{itemize}
+        \begin{figure}[t]%
+            \centering
+            \includegraphics[width=0.7\textwidth]{fig/gather}%
+            \caption{ISMIR's Gather.town map.}%
+            \label{fig:gather}%
+        \end{figure}
 
-\begin{figure}[t]%
-    \centering
-    \includegraphics[width=0.7\textwidth]{fig/gather}%
-    \caption{ISMIR's Gather.town map.}%
-    \label{fig:gather}%
-\end{figure}
+    \subsection{Code Artifacts and Populating Content}
+        \begin{itemize}
+            \item In order to be able to repeat the setup as quickly as possible, should things go haywire, we decided to script much of the bulk data import to Midspace. The code is hosted on \href{https://github.com/ismir/ismir-2021-utils}{GitHub}.
+            \item Eligible data for this were presenters and their presentations (people, posters, videos), the schedule (\emph{when} something happens), and other events (\emph{what} happens at one or multiple times).
+            \item This required attempting to collect the necessary data from various sources as early as possible (to leave room for errors).
+            \item To make providing data as easy as possible for the other chairs, we attempted to support simplified data import formats, instead of the more comprehensive, original Midspace formats.
+            \item Once the conference start was very close, we switched over to manual data entry.
+            \item Because the registration system (which was not chosen by the tech chairs) did not offer a suitable API, authors and attendees had to be imported into Midspace manually by running custom-coded scripts.
+            \item The gather.town map was created in a long process together with a graphic designer from Korea that we payed for via Fiverr. The designer created the concept and designed the space with respect to our requirements (exptected number of attendees, etc.). He also helped us to fill in the sponsor area in gather town which resulted in many additional changes due to sponsor re-requests.
+            \item Events on gather.town were also manually entered via the map-making tool. This is a tedious process and can not be automated or synced to the conference schedule.
+            \item Zoom events where manually scheduled and we had to use multiple admin accounts to manage the events. Note that any changes to the schedule were not synced to the Zoom events and thus always leads to conflicts.
+        \end{itemize}
 
-\subsection{Code Artifacts and Populating Content}
-\begin{itemize}
-    \item In order to be able to repeat the setup as quickly as possible, should things go haywire, we decided to script much of the bulk data import to Midspace. The code is hosted on \href{https://github.com/ismir/ismir-2021-utils}{GitHub}.
-    \item Eligible data for this were presenters and their presentations (people, posters, videos), the schedule (\emph{when} something happens), and other events (\emph{what} happens at one or multiple times).
-    \item This required attempting to collect the necessary data from various sources as early as possible (to leave room for errors).
-    \item To make providing data as easy as possible for the other chairs, we attempted to support simplified data import formats, instead of the more comprehensive, original Midspace formats.
-    \item Once the conference start was very close, we switched over to manual data entry.
-    \item Because the registration system (which was not chosen by the tech chairs) did not offer a suitable API, authors and attendees had to be imported into Midspace manually by running custom-coded scripts.
-    \item The gather.town map was created in a long process together with a graphic designer from korea that we payed for via Fiverr. The designer created the concept and designed the space with respect to our requirements (exptected number of attendees, etc.). He also helped us to fill in the sponsor area in gather town which resulted in many additional changes due to sponsor re-requests.
-    \item Events on gather.town were also manually entered via the map-making tool. This is a tedious process and can not be automated or synced to the conference schedule.
-    \item Zoom events where manually scheduled and we had to use multiple admin accounts to manage the events. Note that any changes to the schedule were not synced to the Zoom events and thus always leads to conflicts.
-\end{itemize}
+    \subsection{Running the Conference}
 
-\subsection{Running the Conference}
+        \begin{itemize}
+            \item A \href{https://docs.google.com/spreadsheets/d/1ENeS3DyxSxWQGRSsiMsHuddwmdlg6r_4tH6VTcvLgMg/edit?usp=sharing}{storyboard} was created for the entire conference with the complete details of each session - start and end time (timezone appropriate), session chairs, panelists (if any), platform used, direct link to the session (if any). Further, each session was assigned one tech-chair and a tech-volunteer that are required to be present at the session.
+            \item The main task of the tech-volunteers was to help session chairs and authors to seamlessly navigate the conference platforms. The tech-chairs were only a stand-by option for worst case scenarios---when admin access was required to make changes to the platform or when the tech-volunteer couldn't make it to the session.
+            \item As tech-volunteers we recruited 3--4 students (see~\ref{sssec:vol}) across each of the three timezones, that roughly correspond to Asia, Europe and US timezones. We had 12 volunteers in total.
+            \item A couple of weeks before the conference, all tech-volunteers were given a walk-through of the conference platforms and a live demo of how to manage the platforms.
+            \item During the conference, the respective tech-chairs would remind the responsible tech-volunteers of the sessions a day earlier. 
+        \end{itemize}
 
-\begin{itemize}
-    \item A \href{https://docs.google.com/spreadsheets/d/1ENeS3DyxSxWQGRSsiMsHuddwmdlg6r_4tH6VTcvLgMg/edit?usp=sharing}{storyboard} was created for the entire conference with the complete details of each session - start and end time (timezone appropriate), session chairs, panelists (if any), platform used, direct link to the session (if any). Further, each session was assigned one tech-chair and a tech-volunteer that are required to be present at the session.
-    \item The main task of the tech-volunteers was to help session chairs and authors to seamlessly navigate the conference platforms. The tech-chairs were only a stand-by option for worst case scenarios---when admin access was required to make changes to the platform or when the tech-volunteer couldn't make it to the session.
-    \item As tech-volunteers we recruited 3-4 students (see~\ref{sssec:vol}) across each of the three timezones, that roughly correspond to Asia, Europe and US timezones. We had 12 volunteers in total.
-    \item A couple of weeks before the conference, all tech-volunteers were given a walkthrough of the conference platforms and a live demo of how to manage the platforms.
-    \item During the conference, the respective tech-chairs would remind the responsible tech-volunteers of the sessions a day earlier. 
-\end{itemize}
+    \subsection{Lessons Learned}
 
-\subsection{Lessons Learned}
-
-\begin{itemize}
-    \item Negotiation of contracts, especially in the US, seem to have been way underestimated by us. Start that early, if things go bogus, include the board, they are more than willing to help out.
-    \item Create a master document very early on that contains all times in UTC and is \emph{easily} parsable. Specifically, we recommend not use spreadsheets or other formats that are parseable in principal, but will inevitably lead to various avoidable hiccups.
-    \item Acknowledge the nature and relationships of your scheduling data entities early on: You have content that may be presented multiple times, sometimes live, sometimes as recording, sometimes under the same title, but with different participants, sometimes followed by a live Q\&A session, sometimes artificially limited due to some sponsorship deal, etc. Assign appropriate labels to your events that present such content. We had to spend a lot of time collecting this data, because it was not thought of in the schedule creation phase.
-    \item Assign unique ids to all your schedule items (events) and their content, to avoid having to do string matching of titles that happen to change just before the conference starts.
-    \item We all have full lives and jobs. So while some people deliver content on time, many deliver late or require changes---and changes to the changes. Ensure the system is ready to run at least six weeks before the conference (especially, if the chosen system supports content upload by paper authors) and set a hard deadline for \emph{everybody} who delivers content no less than two weeks before the conference. Ensure that the general chairs are on board with this and are willing to enforce it.
-    \item Splitting of registration and conference system created unnecessary extra work. Make sure that both your systems have APIs that you can connect.
-    \item Get tech chairs from every time zone (maybe plus a backup). After one of the chairs quit, we lost the US time zones which led to early morning/late night shifts for us Indians and Europeans.
-    \item You cannot avoid pressure situation (e.g.,~board meeting with all participants in one room), so make sure you really know the pitfalls of the system (e.g.,~at one point we did not see the control panels since the browser window was too small).
-    \item For the four of us, it was a lot of work and responsibility. Basically, we all paused our main occupations for at least one week. For future ``all-digital'' ISMIRs, you should consider hiring and paying people for this, because it is simply too much for a community service.
-    \item Poster sessions in midspace were not a great experience---with the user having to enter and exit video calls of each of the poster. Consider organising the poster sessions in Gathertown in the future, which allows seamless navigation in the poster area, allowing the participants to talk with the nearby participants and authors.
-    \item One of the arguments for people to use Zoom for video conferencing in our community is the ability to easily share system audio in good quality. We noticed, however, that only a minority of users actually need this feature or does not know how to install a loopback software driver. Furthermore, the chrome browser has support to share system audio via the browser (at least on Windows). Thus, Zoom for audio based presentation isn't a hard requirement anymore. Given that we didn't have many issues with midspaces video system for either the keynotes nor the poster sessions (almost no dropouts), we can only suggest to not use zoom as additionaly platform when its not absolutely required. This also significalty reduces the organizational overhead as Zoom's backend doesn't allow to control the full schedule from multiple moderator accounts.
-\end{itemize}
+        \begin{itemize}
+            \item Negotiation of contracts, especially in the US, seem to have been way underestimated by us. Start that early, if things go bogus, include the board, they are willing to help out.
+            \item Create a master document very early on that contains all times in UTC and is \emph{easily} parseable. Specifically, we recommend not use spreadsheets or other formats that are parseable in principal, but will inevitably lead to various avoidable hiccups.
+            \item Acknowledge the nature and relationships of your scheduling data entities early on: You have content that may be presented multiple times, sometimes live, sometimes as recording, sometimes under the same title, but with different participants, sometimes followed by a live Q\&A session, sometimes artificially limited due to some sponsorship deal, etc. Assign appropriate labels to your events that present such content. We had to spend a lot of time collecting this data, because it was not thought of in the schedule creation phase.
+            \item Assign unique ids to all your schedule items (events) and their content, to avoid having to do string matching of titles that happen to change just before the conference starts.
+            \item We all have full lives and jobs. So while some people deliver content on time, many deliver late or require changes---and changes to the changes. Ensure the system is ready to run at least six weeks before the conference (especially, if the chosen system supports content upload by paper authors) and set a hard deadline for \emph{everybody} who delivers content no less than two weeks before the conference. Ensure that the general chairs are on board with this and are willing to enforce it.
+            \item Splitting of registration and conference system created unnecessary extra work. Make sure that both your systems have APIs that you can connect.
+            \item Get tech chairs from every time zone (maybe plus a backup). After one of the chairs quit, we lost the US time zones which led to early morning/late night shifts for us Indians and Europeans.
+            \item You cannot avoid pressure situation (e.g.,~board meeting with all participants in one room), so make sure you really know the pitfalls of the system (e.g.,~at one point we did not see the control panels since the browser window was too small).
+            \item For the four of us, it was a lot of work and responsibility. Basically, we all paused our main occupations for at least one week. For future ``all-digital'' ISMIRs, you should consider hiring and paying people for this, because it is simply too much for a community service.
+            \item Poster sessions in Midspace were not a great experience---with the user having to enter and exit video calls of each of the poster. Consider organizing the poster sessions in Gather.town in the future, which allows seamless navigation in the poster area, allowing the participants to talk with the nearby participants and authors.
+            \item One of the arguments for people to use Zoom for video conferencing in our community is the ability to easily share system audio in good quality. We noticed, however, that only a minority of users actually need this feature or does not know how to install a loopback software driver. Furthermore, the chrome browser has support to share system audio via the browser (at least on Windows). Thus, Zoom for audio based presentation isn't a hard requirement anymore. Given that we didn't have many issues with Midspace's video system for either the keynotes nor the poster sessions (almost no dropouts), we can only suggest to not use zoom as additionally platform when its not absolutely required. This also significantly reduces the organizational overhead as Zoom's backend doesn't allow to control the full schedule from multiple moderator accounts.
+        \end{itemize}
 
 \section{Diversity, Inclusion, and Newcomer Initiatives}
+    Timeline:
     \begin{itemize}
-        \item \textbf{Personnel}
-            \begin{itemize}
-                \item   DEI chairs: Blair Kaneshiro, Jordan B. L. Smith
-                \item   Newcomer initiative chairs: Nick Gang, Elona Shatri
-            \end{itemize}
-        \item   Timeline
-            \begin{itemize}
-                \item   Nov 2020: Blair joined 
-                \item   Apr 2021: Jordan joined as co-chair
-                \item   Aug 2021: Nick and Elona join as Newcomer Initiatives chairs
-            \end{itemize}
+        \item   Nov 2020: Blair joined 
+        \item   Apr 2021: Jordan joined as co-chair
+        \item   Aug 2021: Nick and Elona join as Newcomer Initiatives chairs
+    \end{itemize}
+    
+    Personnel:
+    \begin{itemize}
+        \item   DEI chairs: Blair Kaneshiro, Jordan B. L. Smith
+        \item   Newcomer initiative chairs: Nick Gang, Elona Shatri
     \end{itemize}
     
     The workload for the combined D\&I initiatives was very high. If wishing to promote a similar scope of D\&I programming in the following years, chairs are encouraged to consider forming a larger team. For instance, two D\&I chairs who coordinate and advise across initiatives and communicate with GCs, plus subcommittees formed for separate initiatives, e.g., Newcomer Initiatives, Grants, Plenary and Meetup Sessions, Community Engagement (surveys and blog posts).
@@ -483,7 +482,7 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
 
         \end{itemize}
         
-        \paragraph{Closing Remarks}
+        Closing Remarks:
         \begin{itemize}
             \item   The COVID-19 pandemic has made music more important as a medium to connect people, to enhance both physical and mental health, and to advance human potential
             \item   Social distancing measures have greatly enhanced interest in eHealth and eLearning
@@ -520,7 +519,7 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
 
             \end{itemize}
             
-            \paragraph{Summary}
+            Summary:
                 We had panelists from diverse backgrounds (Li Su from information technology, Patrick Savage from music cognition, anthropology, Xiao Hu from education and information sciences) who all brought valuable perspectives informed by their own unique experiences. They all agreed that the need for cultural diversity in music studies is important beyond argument, and that this year's special call is a step in the right direction for promoting cultural diversity in the ISMIR scientific program. However, a lot remains to be done for it to achieve its goal. Also while we're now seeing a small but growing representation of researchers from East Asia, this is not true for Africa and South America, for instance.
                 
                 \textit{Challenges in cross-cultural research initiatives} are mainly
@@ -554,7 +553,7 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
 
         \end{itemize}
 
-        \subsubsection{Special Session 6: Ethical issues in Music AI --- Perspectives on authorship with creative artificial intelligence in music}
+        \subsubsection[Special Session 6: Ethical issues in Music AI]{Special Session 6: Ethical issues in Music AI --- Perspectives on authorship with creative artificial intelligence in music}
         \begin{itemize}
             \item   Time: 2.30--3.30 PM on November 11, 2021 (UTC)
             \item   Panelists: Andre Holzapfel (KTH Royal Institute of Technology, Sweden), Petra Pauliina J\"a\"askel\"ainen (KTH Royal Institute of Technology, Sweden), Anna-Kaisa Kaila (KTH Royal Institute of Technology, Sweden), Sertan \c{S}ent\"urk (Kobalt Music Group, United Kingdom) 
@@ -588,7 +587,7 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
                             \begin{itemize}
                                 \item We remove the upper limit (usually capped at 50 in the previous years) for the total number of accepted papers since there is no physical constraint (i.e., the required space for hosting all the posters).
 
-                                \item   We encourage the submission of demo videos during the review process; these videos are also uploaded to midspace as supplementary materials. 
+                                \item   We encourage the submission of demo videos during the review process; these videos are also uploaded to Midspace as supplementary materials. 
                             \end{itemize}
                     \end{itemize}
             \end{enumerate}
@@ -641,7 +640,7 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
             
             During the Event:
             \begin{itemize}
-                \item Glitches with Zoom links: to enable audio sharing, we provided presenters the option to use zoom links instead of the default midspace chat room. This last minute notification seemed to create some confusions as well as technical troubles during the conference. For future (online) LBDs, we suggest to provide this alternative solution only upon requests (as opposed to giving this option widely). 
+                \item Glitches with Zoom links: to enable audio sharing, we provided presenters the option to use zoom links instead of the default Midspace chat room. This last minute notification seemed to create some confusions as well as technical troubles during the conference. For future (online) LBDs, we suggest to provide this alternative solution only upon requests (as opposed to giving this option widely). 
             \end{itemize}
             
             Other feedback:
@@ -797,6 +796,13 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
                         \item  Panelists: Cynthia Liem (Delft University of Technology), Anja Volk (Utrecht University, Netherlands), Fran\c{c}ois Pachet (Spotify, France), Fabien Gouyon (Pandora, USA), Thomas Pr\"atzlich (Skoove, Germany) 
                     \end{itemize}
             \end{itemize}
+    
+        \begin{figure}%
+            \centering
+            \includegraphics{fig/labshowcase_country}%
+            \caption{Number of participating labs per country}%
+            \label{fig:labshowcase_country}%
+        \end{figure}
 
         \subsubsection{Masterclasses}
             Masterclasses are sessions where panelists discuss topics related to getting into and working in the industry, and they are intended to familiarize current students and recent graduates with interviews and processes they may encounter when looking for MIR-style roles in industry. These sessions were not tied to sponsorship, i.e., the panelists were approached independent of their companies' participation in the conference.
@@ -812,14 +818,14 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
                         \item   Panelists: Peter Sobot (Spotify, USA), Lamtharn ``Hanoi'' Hantrakul~(ByteDance / TikTok, China), Sertan \c{S}ent\"urk (Kobalt Music Group, United Kingdom)
                     \end{itemize}
             \end{itemize}
-    
+        
     \subsection{Lab Showcase}
         This year, we introduced a new event called the Lab Showcase to the ISMIR conference. Academic labs focusing on MIR research were invited to showcase their lab at virtual booths. There are in total 33 lab participants across 17 different countries (see Fig.~\ref{fig:labshowcase_country}). By introducing the Lab Showcase, we hope to give a perspective on MIR research world-wide, enable connections between institutions and prospective students or collaborators, and make it easier to reach out to and learn more about various labs across the globe.
         \begin{figure}%
             \centering
-            \includegraphics{fig/labshowcase_country}%
-            \caption{Number of participating labs per country}%
-            \label{fig:labshowcase_country}%
+            \includegraphics[scale=.8]{fig/labshowcase_satisfaction}%
+            \caption{Satisfaction with the lab showcase}%
+            \label{fig:labshowcase_satisfaction}%
         \end{figure}
         
         \subsubsection{Pre-organization survey and format}
@@ -827,7 +833,7 @@ Since ISMIR 2021 was fully digital, the conference platforms are the most essent
             
 We decided to provide more freedom for labs by not providing strict template for lab presenters and not scheduling a strict time slot for lab live sessions. The lab showcase is composed of the following parts:
             \begin{itemize}
-                \item \textit{Virtual booths} at MidSpace for sharing introduction materials (texts, images, videos, documents) and flexible time slots for live zoom sessions. The lab virtual booths are similar to the sponsor booths (thanks to the sponsor chairs for providing help on setting up the booth pages).
+                \item \textit{Virtual booths} at Midspace for sharing introduction materials (texts, images, videos, documents) and flexible time slots for live zoom sessions. The lab virtual booths are similar to the sponsor booths (thanks to the sponsor chairs for providing help on setting up the booth pages).
                 \item \textit{Live sessions} hosted on zoom and distributed throughout the conference week. We invited labs to propose at least two live sessions. There is no limitation on the duration of the time slots.
                 \item \textit{Job board} together with sponsors for labs who wish to post vacancies.
             \end{itemize}
@@ -845,12 +851,6 @@ We decided to provide more freedom for labs by not providing strict template for
             
         \subsubsection{Post-conference Feedback}
             Generally, the participants look to be satisfied with the new activity. Among those who participated in the lab showcase from the post-conference survey, 85\% of them reported that they are at least ``moderately satisfied'' (see Fig.~\ref{fig:labshowcase_satisfaction}). 64\% participants reported that they are expecting the same emphasis on lab showcases in future ISMIRs (see Fig.~\ref{fig:labshowcase_future}).
-        \begin{figure}%
-            \centering
-            \includegraphics[scale=.8]{fig/labshowcase_satisfaction}%
-            \caption{Satisfaction with the lab showcase}%
-            \label{fig:labshowcase_satisfaction}%
-        \end{figure}
         \begin{figure}%
             \centering
             \includegraphics[scale=.8]{fig/labshowcase_future}%
@@ -929,15 +929,17 @@ We decided to provide more freedom for labs by not providing strict template for
         To the best of our knowledge, ISMIR2021 has seen the most sponsors and largest sponsorship income than all ISMIR conferences in the past. But, more importantly, we managed to increase the revenue by 40\ and onboard five additional sponsors compared to ISMIR 2020, effectively returning the sponsor presence in the conference back to the pre-pandemic levels. Figure~\ref{fig:sponsorship_amount} shows the sponsorship income and Fig.~\ref{fig:sponsorship_tiers} shows the number of sponsors for the ISMIR conference (i.e., excluding WiMIR sponsorship) by tier in the last five years.  
         \begin{figure}%
             \centering
-            \includegraphics{fig/sponsorship_amount}%
-            \caption{Overall sponsorship amount}%
-            \label{fig:sponsorship_amount}%
-        \end{figure}
-        \begin{figure}%
-            \centering
-            \includegraphics{fig/sponsorship_tiers}%
-            \caption{Number of sponsors per tiers}%
-            \label{fig:sponsorship_tiers}%
+            \begin{subfigure}{.45\textwidth}
+                \includegraphics[scale=.9]{fig/sponsorship_amount}%
+                \caption{Overall sponsorship amount}%
+                \label{fig:sponsorship_amount}%
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{.45\textwidth}
+                \includegraphics{fig/sponsorship_tiers}%
+                \caption{Number of sponsors per tiers}%
+                \label{fig:sponsorship_tiers}%
+            \end{subfigure}
         \end{figure}
         
         WiMIR Sponsorship had three tiers, namely Patron (\$5,000 and above), Contributor (\$2,500--\$4,999), Supporter (\$1000--\$2499). 7 Sponsors contributed to Women in MIR (1 Patron, 5 Contributor, 1 Supporter), listed at \href{https://ismir2021.ismir.net/wimir/}{https://ismir2021.ismir.net/wimir/}. 
@@ -947,7 +949,7 @@ We decided to provide more freedom for labs by not providing strict template for
         The industry and Sponsorship co-chairs organized eight sessions in the conference program, which around 1000 people attended. The Table~\ref{tab:IndustrySessions} summarizes the number of Industry sessions, participants, and attendees. 
         
         
-        \begin{table}
+        \begin{table}[b]
             \centering
             \begin{tabular}{l|l|l|l}
                 \textbf{Industry Session} & \textbf{\# Sessions} & \textbf{Participants} & \textbf{Attendance}\\ \hline
@@ -1210,7 +1212,7 @@ Ultimately, however, the use of the Georgia Tech Marketplace was an easy choice 
                     \begin{tabular}{l|r}
                         \textbf{Item} & \textbf{Approximate amount (x1000)}\\ \hline
                         
-                        Technology (midspace, zoom, gather, etc.) & 20 \\
+                        Technology (Midspace, zoom, gather, etc.) & 20 \\
                         Personnel \& Honoraria & 20 \\
                         Registration Fee Waivers and Awards & 25 \\
                         Transaction Fees and other expenses & 5 \\
@@ -1275,13 +1277,18 @@ The results of the post-conference survey with 148 participants indicated that t
         Figure~\ref{fig:survey_onsite} compares the virtual conference experience with an on-site conference and shows that many of the program items are rated equally or worse for the online-only conference.
           \begin{figure}%
             \centering
-            \includegraphics[scale=.8]{fig/survey_onsite}%
+            \includegraphics[width=\columnwidth]{fig/survey_onsite}%
             \caption{Virtual conference vs.\ On-site}%
             \label{fig:survey_onsite}%
         \end{figure}
 
     \subsection{Outlook}
-        Survey responses shown in Fig.~\ref{fig:survey_future} indicate that a majority of attendees appreciate the mix of program items and want to keep most items similarly represented in future ISMIR conferences, potentially a bit more of everything. The items that a slightly larger group of attendees wants to emphasize more are Oral Presentations, the social program, as well as D\&I and Newcomer initiatives.
+        Survey responses shown in Fig.~\ref{fig:survey_future} indicate that a majority of attendees appreciate the mix of program items and want to keep most items similarly represented in future ISMIR conferences, potentially a bit more of everything. The items that a slightly larger group of attendees wants to emphasize more are 
+        \begin{itemize}
+            \item   oral presentations,
+            \item   the social program, as well as 
+            \item   D\&I and Newcomer initiatives.
+        \end{itemize}
           \begin{figure}%
             \centering
             \includegraphics[scale=.8]{fig/survey_future}%
